@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сборка ПК</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Сборка ПК</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="cpu.html">Процессоры</a></li>
+                    <li><a href="gpu.html">Видеокарты</a></li>
+                    <li><a href="motherboard.html">Материнские платы</a></li>
+                    <li><a href="storage.html">Накопители</a></li>
+                    <li><a href="psu.html">Блоки питания</a></li>
+                    <li><a href="case.html">Корпуса</a></li>
+                    <li><a href="os.html">Операционные системы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Соберите свой идеальный ПК</h2>
+            <p>Подберите компоненты для игр, работы и творчества.</p>
+            <a href="cpu.html" class="btn">Начать с процессоров</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Сборка ПК. Все права защищены.</p>
+        </div>
+    </footer>
+    <div id="recommendationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Рекомендации по сборке</h2>
+            <p>Выберите подходящие компоненты для ваших задач:</p>
+            <ul>
+                <li>Для офисных задач: AMD Ryzen 3 1200 или Intel Core i3-12100.</li>
+                <li>Для игр: AMD Ryzen 5 5600X или Intel Core i5-13600K.</li>
+                <li>Для профессиональных задач: AMD Ryzen 9 7950X или Intel Core i9-13900K.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        const modal = document.getElementById("recommendationModal");
+        const btn = document.querySelector(".btn");
+        const span = document.getElementsByClassName("close")[0];
+    
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+    
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
