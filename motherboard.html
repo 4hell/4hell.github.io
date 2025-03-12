@@ -25,9 +25,38 @@
             </nav>
         </div>
     </header>
+    <section class="component-description">
+        <div class="container">
+            <h2>Что такое материнская плата?</h2>
+            <p>
+                Материнская плата — это основа компьютера, которая соединяет все компоненты: процессор, видеокарту, 
+                оперативную память, накопители и другие устройства. Она обеспечивает их взаимодействие и работу.
+            </p>
+            <h3>История материнских плат</h3>
+            <p>
+                Первые материнские платы появились в 1980-х годах и были очень простыми. С развитием технологий 
+                они стали более функциональными и поддерживают современные стандарты, такие как PCIe 4.0 и USB 3.2.
+            </p>
+            <h3>Какие бывают материнские платы?</h3>
+            <p>
+                Материнские платы делятся по форм-фактору (ATX, mATX, ITX) и поддерживаемым процессорам (Intel или AMD). 
+                Выбор зависит от вашей сборки и задач.
+            </p>
+        </div>
+    </section>
+
 
     <section class="content">
         <div class="container">
+            <h2>Рекомендации по выбору материнской платы</h2>
+            <p>
+                Выбор материнской платы зависит от вашего процессора и задач. Вот несколько рекомендаций:
+            </p>
+            <ul>
+                <li><strong>Бюджетный сегмент</strong>: MSI B450M PRO-VDH MAX. Подходит для базовых сборок.</li>
+                <li><strong>Средний сегмент</strong>: ASUS TUF Gaming B550-PLUS. Отличный выбор для игровых сборок.</li>
+                <li><strong>Премиальный сегмент</strong>: Gigabyte AORUS X570 Master. Идеальна для мощных сборок.</li>
+            </ul>
             <h2>Модели материнских плат</h2>
             <table>
                 <thead>
@@ -36,6 +65,7 @@
                         <th>Характеристики</th>
                         <th>Цена</th>
                         <th>Где купить</th>
+                        <th>Добавить в сборку</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -47,6 +77,9 @@
                             <a href="https://www.dns-shop.ru" target="_blank">DNS</a> | 
                             <a href="https://www.eldorado.ru" target="_blank">Эльдорадо</a>
                         </td>
+                        <td>
+                            <button class="add-to-build" data-category="Процессор" data-name="Intel Core i7-12700K" data-price="30000">Добавить в сборку</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>ASUS TUF Gaming B550-PLUS</td>
@@ -55,6 +88,9 @@
                         <td>
                             <a href="https://www.dns-shop.ru" target="_blank">DNS</a> | 
                             <a href="https://www.eldorado.ru" target="_blank">Эльдорадо</a>
+                        </td>
+                        <td>
+                            <button class="add-to-build" data-category="Процессор" data-name="Intel Core i7-12700K" data-price="30000">Добавить в сборку</button>
                         </td>
                     </tr>
                     <tr>
@@ -65,6 +101,9 @@
                             <a href="https://www.dns-shop.ru" target="_blank">DNS</a> | 
                             <a href="https://www.eldorado.ru" target="_blank">Эльдорадо</a>
                         </td>
+                        <td>
+                            <button class="add-to-build" data-category="Процессор" data-name="Intel Core i7-12700K" data-price="30000">Добавить в сборку</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>Gigabyte AORUS X570 Master</td>
@@ -74,9 +113,19 @@
                             <a href="https://www.dns-shop.ru" target="_blank">DNS</a> | 
                             <a href="https://www.eldorado.ru" target="_blank">Эльдорадо</a>
                         </td>
+                        <td>
+                            <button class="add-to-build" data-category="Процессор" data-name="Intel Core i7-12700K" data-price="30000">Добавить в сборку</button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
+        </div>
+    </section>
+    <section class="build-summary">
+        <div class="container">
+            <h2>Ваша сборка</h2>
+            <div id="buildSummary"></div>
+            <div id="totalCost"></div>
         </div>
     </section>
 
@@ -85,5 +134,7 @@
             <p>&copy; 2025 Сборка ПК. Все права защищены.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>

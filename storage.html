@@ -25,9 +25,38 @@
             </nav>
         </div>
     </header>
+    <section class="component-description">
+        <div class="container">
+            <h2>Что такое накопители (HDD/SSD)?</h2>
+            <p>
+                Накопители — это устройства для хранения данных. HDD (жесткий диск) использует магнитные диски для хранения данных, 
+                а SSD (твердотельный накопитель) — флэш-память. SSD быстрее и надежнее, но дороже, чем HDD.
+            </p>
+            <h3>История накопителей</h3>
+            <p>
+                Первые HDD появились в 1950-х годах и были огромными. С развитием технологий они стали компактнее и вместительнее. 
+                SSD появились в 2000-х годах и быстро завоевали популярность благодаря своей скорости.
+            </p>
+            <h3>Какие бывают накопители?</h3>
+            <p>
+                Накопители делятся на HDD и SSD. HDD подходят для хранения больших объемов данных, а SSD — для установки 
+                операционной системы и часто используемых программ.
+            </p>
+        </div>
+    </section>
+
 
     <section class="content">
         <div class="container">
+            <h2>Рекомендации по выбору накопителя</h2>
+            <p>
+                Выбор накопителя зависит от ваших задач. Вот несколько рекомендаций:
+            </p>
+            <ul>
+                <li><strong>Бюджетный сегмент</strong>: Seagate Barracuda 1TB HDD. Подходит для хранения данных.</li>
+                <li><strong>Средний сегмент</strong>: Samsung 970 EVO Plus 1TB SSD. Отличный выбор для установки ОС и программ.</li>
+                <li><strong>Премиальный сегмент</strong>: Western Digital Black SN850 1TB NVMe SSD. Идеален для профессиональных задач.</li>
+            </ul>
             <h2>Модели накопителей</h2>
             <table>
                 <thead>
@@ -36,6 +65,7 @@
                         <th>Характеристики</th>
                         <th>Цена</th>
                         <th>Где купить</th>
+                        <th>Добавить в сборку</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -47,6 +77,9 @@
                             <a href="https://www.dns-shop.ru" target="_blank">DNS</a> | 
                             <a href="https://www.eldorado.ru" target="_blank">Эльдорадо</a>
                         </td>
+                        <td>
+                            <button class="add-to-build" data-category="Процессор" data-name="Intel Core i7-12700K" data-price="30000">Добавить в сборку</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>WD Blue 1TB HDD</td>
@@ -55,6 +88,9 @@
                         <td>
                             <a href="https://www.dns-shop.ru" target="_blank">DNS</a> | 
                             <a href="https://www.eldorado.ru" target="_blank">Эльдорадо</a>
+                        </td>
+                        <td>
+                            <button class="add-to-build" data-category="Процессор" data-name="Intel Core i7-12700K" data-price="30000">Добавить в сборку</button>
                         </td>
                     </tr>
                     <tr>
@@ -65,6 +101,9 @@
                             <a href="https://www.dns-shop.ru" target="_blank">DNS</a> | 
                             <a href="https://www.eldorado.ru" target="_blank">Эльдорадо</a>
                         </td>
+                        <td>
+                            <button class="add-to-build" data-category="Процессор" data-name="Intel Core i7-12700K" data-price="30000">Добавить в сборку</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>Western Digital Black SN850 1TB NVMe SSD</td>
@@ -74,9 +113,19 @@
                             <a href="https://www.dns-shop.ru" target="_blank">DNS</a> | 
                             <a href="https://www.eldorado.ru" target="_blank">Эльдорадо</a>
                         </td>
+                        <td>
+                            <button class="add-to-build" data-category="Процессор" data-name="Intel Core i7-12700K" data-price="30000">Добавить в сборку</button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
+        </div>
+    </section>
+    <section class="build-summary">
+        <div class="container">
+            <h2>Ваша сборка</h2>
+            <div id="buildSummary"></div>
+            <div id="totalCost"></div>
         </div>
     </section>
 
@@ -85,5 +134,6 @@
             <p>&copy; 2025 Сборка ПК. Все права защищены.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -25,9 +25,38 @@
             </nav>
         </div>
     </header>
+    <section class="component-description">
+        <div class="container">
+            <h2>Что такое операционная система?</h2>
+            <p>
+                Операционная система (ОС) — это программное обеспечение, которое управляет аппаратными ресурсами компьютера 
+                и предоставляет среду для работы приложений. Без ОС компьютер не сможет выполнять задачи.
+            </p>
+            <h3>История операционных систем</h3>
+            <p>
+                Первые операционные системы появились в 1950-х годах и были очень простыми. С развитием технологий 
+                ОС стали более мощными и удобными, поддерживая графический интерфейс и многозадачность.
+            </p>
+            <h3>Какие бывают операционные системы?</h3>
+            <p>
+                ОС делятся на Windows, macOS и Linux. Windows популярна для домашних и игровых компьютеров, macOS — для 
+                устройств Apple, а Linux — для разработчиков и серверов.
+            </p>
+        </div>
+    </section>
+
 
     <section class="content">
         <div class="container">
+            <h2>Рекомендации по выбору операционной системы</h2>
+            <p>
+                Выбор ОС зависит от ваших задач. Вот несколько рекомендаций:
+            </p>
+            <ul>
+                <li><strong>Для домашнего использования</strong>: Windows 10 Home. Подходит для большинства пользователей.</li>
+                <li><strong>Для профессионалов</strong>: Windows 10 Pro. Подходит для работы с виртуализацией и дополнительными функциями безопасности.</li>
+                <li><strong>Для разработчиков</strong>: Ubuntu. Бесплатная ОС с открытым исходным кодом.</li>
+            </ul>
             <h2>Модели операционных систем</h2>
             <table>
                 <thead>
@@ -36,6 +65,7 @@
                         <th>Характеристики</th>
                         <th>Цена</th>
                         <th>Где купить</th>
+                        <th>Добавить в сборку</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -47,6 +77,9 @@
                             <a href="https://www.dns-shop.ru" target="_blank">DNS</a> | 
                             <a href="https://www.eldorado.ru" target="_blank">Эльдорадо</a>
                         </td>
+                        <td>
+                            <button onclick="addToBuild('AMD Ryzen 3 1200', 9000)">Добавить в сборку</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>Windows 10 Pro</td>
@@ -56,6 +89,9 @@
                             <a href="https://www.dns-shop.ru" target="_blank">DNS</a> | 
                             <a href="https://www.eldorado.ru" target="_blank">Эльдорадо</a>
                         </td>
+                        <td>
+                            <button onclick="addToBuild('AMD Ryzen 3 1200', 9000)">Добавить в сборку</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>Ubuntu</td>
@@ -64,9 +100,19 @@
                         <td>
                             <a href="https://ubuntu.com" target="_blank">Официальный сайт</a>
                         </td>
+                        <td>
+                            <button onclick="addToBuild('AMD Ryzen 3 1200', 9000)">Добавить в сборку</button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
+        </div>
+    </section>
+    <section class="build-summary">
+        <div class="container">
+            <h2>Ваша сборка</h2>
+            <div id="buildSummary"></div>
+            <div id="totalCost"></div>
         </div>
     </section>
 
@@ -75,5 +121,7 @@
             <p>&copy; 2025 Сборка ПК. Все права защищены.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>

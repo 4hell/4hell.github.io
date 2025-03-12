@@ -25,9 +25,38 @@
             </nav>
         </div>
     </header>
+    <section class="component-description">
+        <div class="container">
+            <h2>Что такое блок питания (PSU)?</h2>
+            <p>
+                Блок питания — это устройство, которое преобразует переменный ток из розетки в постоянный ток, 
+                необходимый для работы компонентов компьютера. От его качества зависит стабильность работы системы.
+            </p>
+            <h3>История блоков питания</h3>
+            <p>
+                Первые блоки питания появились в 1980-х годах и были очень простыми. С развитием технологий 
+                они стали более мощными и энергоэффективными, поддерживая современные стандарты, такие как 80+.
+            </p>
+            <h3>Какие бывают блоки питания?</h3>
+            <p>
+                Блоки питания делятся по мощности (от 400W до 1200W) и сертификации (80+ Bronze, Gold, Platinum). 
+                Выбор зависит от вашей сборки и задач.
+            </p>
+        </div>
+    </section>
+
 
     <section class="content">
         <div class="container">
+            <h2>Рекомендации по выбору блока питания</h2>
+            <p>
+                Выбор блока питания зависит от вашей сборки. Вот несколько рекомендаций:
+            </p>
+            <ul>
+                <li><strong>Бюджетный сегмент</strong>: Corsair CV550 550W. Подходит для базовых сборок.</li>
+                <li><strong>Средний сегмент</strong>: Seasonic S12III 650W. Отличный выбор для игровых сборок.</li>
+                <li><strong>Премиальный сегмент</strong>: EVGA SuperNOVA 850 G5 850W. Идеален для мощных сборок.</li>
+            </ul>
             <h2>Модели блоков питания</h2>
             <table>
                 <thead>
@@ -36,6 +65,7 @@
                         <th>Характеристики</th>
                         <th>Цена</th>
                         <th>Где купить</th>
+                        <th>Добавить в сборку</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -47,6 +77,9 @@
                             <a href="https://www.dns-shop.ru" target="_blank">DNS</a> | 
                             <a href="https://www.eldorado.ru" target="_blank">Эльдорадо</a>
                         </td>
+                        <td>
+                            <button class="add-to-build" data-category="Процессор" data-name="Intel Core i7-12700K" data-price="30000">Добавить в сборку</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>Seasonic S12III 650W</td>
@@ -55,6 +88,9 @@
                         <td>
                             <a href="https://www.dns-shop.ru" target="_blank">DNS</a> | 
                             <a href="https://www.eldorado.ru" target="_blank">Эльдорадо</a>
+                        </td>
+                        <td>
+                            <button class="add-to-build" data-category="Процессор" data-name="Intel Core i7-12700K" data-price="30000">Добавить в сборку</button>
                         </td>
                     </tr>
                     <tr>
@@ -65,6 +101,9 @@
                             <a href="https://www.dns-shop.ru" target="_blank">DNS</a> | 
                             <a href="https://www.eldorado.ru" target="_blank">Эльдорадо</a>
                         </td>
+                        <td>
+                            <button class="add-to-build" data-category="Процессор" data-name="Intel Core i7-12700K" data-price="30000">Добавить в сборку</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>Corsair RM1000x 1000W</td>
@@ -74,9 +113,19 @@
                             <a href="https://www.dns-shop.ru" target="_blank">DNS</a> | 
                             <a href="https://www.eldorado.ru" target="_blank">Эльдорадо</a>
                         </td>
+                        <td>
+                            <button class="add-to-build" data-category="Процессор" data-name="Intel Core i7-12700K" data-price="30000">Добавить в сборку</button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
+        </div>
+    </section>
+    <section class="build-summary">
+        <div class="container">
+            <h2>Ваша сборка</h2>
+            <div id="buildSummary"></div>
+            <div id="totalCost"></div>
         </div>
     </section>
 
@@ -85,5 +134,7 @@
             <p>&copy; 2025 Сборка ПК. Все права защищены.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
