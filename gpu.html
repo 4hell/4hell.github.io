@@ -20,6 +20,8 @@
                     <li><a href="storage.html">Накопители</a></li>
                     <li><a href="psu.html">Блоки питания</a></li>
                     <li><a href="case.html">Корпуса</a></li>
+                    <li><a href="ram.html">Оперативная память</a></li>
+                    <li><a href="ram.html">Система охлаждение</a></li>
                     <li><a href="os.html">Операционные системы</a></li>
                 </ul>
             </nav>
@@ -64,9 +66,8 @@
                         <th>Модель</th>
                         <th>Характеристики</th>
                         <th>Цена</th>
-                        <th>Где купить</th>
-                        <th>Добавить в сборку</th>
-
+                        
+                        
                     </tr>
                 </thead>
                 <tbody>
@@ -74,61 +75,53 @@
                         <td>NVIDIA GeForce GTX 1650 Super 4GB</td>
                         <td>Бюджетная видеокарта для базовых игр</td>
                         <td>~18 000₽</td>
-                        <td>
-                            <a href="https://www.dns-shop.ru" target="_blank">DNS</a> | 
-                            <a href="https://www.eldorado.ru" target="_blank">Эльдорадо</a>
-                        </td>
-                        <td>
-                            <button class="add-to-build" data-category="Процессор" data-name="Intel Core i7-12700K" data-price="30000">Добавить в сборку</button>
-                        </td>
+                        
+                        
                     </tr>
                     <tr>
                         <td>AMD Radeon RX 6600 XT 8GB</td>
                         <td>Средний уровень для игр в Full HD и 2K</td>
                         <td>~31 500₽</td>
-                        <td>
-                            <a href="https://www.dns-shop.ru" target="_blank">DNS</a> | 
-                            <a href="https://www.eldorado.ru" target="_blank">Эльдорадо</a>
-                        </td>
-                        <td>
-                            <button class="add-to-build" data-category="Процессор" data-name="Intel Core i7-12700K" data-price="30000">Добавить в сборку</button>
-                        </td>
+                        
+                        
                     </tr>
                     <tr>
                         <td>NVIDIA GeForce RTX 3060 Ti 8GB</td>
                         <td>Высококачественные игры в 2K и 4K</td>
                         <td>~36 000₽</td>
-                        <td>
-                            <a href="https://www.dns-shop.ru" target="_blank">DNS</a> | 
-                            <a href="https://www.eldorado.ru" target="_blank">Эльдорадо</a>
-                        </td>
-                        <td>
-                            <button class="add-to-build" data-category="Процессор" data-name="Intel Core i7-12700K" data-price="30000">Добавить в сборку</button>
-                        </td>
+                        
+                        
                     </tr>
                     <tr>
                         <td>NVIDIA GeForce RTX 4090 24GB</td>
                         <td>Флагманская видеокарта для 4K и VR</td>
                         <td>~144 000₽</td>
-                        <td>
-                            <a href="https://www.dns-shop.ru" target="_blank">DNS</a> | 
-                            <a href="https://www.eldorado.ru" target="_blank">Эльдорадо</a>
-                        </td>
-                        <td>
-                            <button class="add-to-build" data-category="Процессор" data-name="Intel Core i7-12700K" data-price="30000">Добавить в сборку</button>
-                        </td>
+                        
+                        
                     </tr>
                 </tbody>
             </table>
         </div>
     </section>
-    <section class="build-summary">
-        <div class="container">
-            <h2>Ваша сборка</h2>
-            <div id="buildSummary"></div>
-            <div id="totalCost"></div>
-        </div>
+    <section class="installation-guide">
+        <img src="images/gpu-install.jpg" alt="Установка видеокарты" width="500">
+        <h2>Установка видеокарты (GPU)</h2>
+        
+        <p>Чтобы установить видеокарту, выполните следующие шаги:</p>
+        <ol>
+            <li>Выключите компьютер и отсоедините его от сети.</li>
+            <li>Откройте боковую панель корпуса.</li>
+            <li>Найдите свободный PCI-Express x16 слот на материнской плате.</li>
+            <li>Открутите заглушки на задней панели корпуса в нужном месте.</li>
+            <li>Осторожно вставьте видеокарту в слот до фиксации.</li>
+            <li>Закрепите видеокарту винтами к корпусу.</li>
+            <li>Подключите кабели питания к видеокарте (если требуется).</li>
+            <li>Закройте корпус и включите компьютер.</li>
+            <li>Установите драйверы для видеокарты.</li>
+        </ol>
     </section>
+    
+    
 
     <footer>
         <div class="container">
@@ -136,6 +129,11 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <body class="gpu">
+        
+        
+
 </body>
+
 
 </html>

@@ -149,3 +149,60 @@ footer {
     margin-top: 20px;
     color: #007BFF;
 }
+/* Фоновые изображения для страниц */
+body.cpu { background: url('cpu-bg.jpg') no-repeat center center/cover; }
+body.gpu { background: url('gpu-bg.jpg') no-repeat center center/cover; }
+body.motherboard { background: url('motherboard-bg.jpg') no-repeat center center/cover; }
+body.ram { background: url('ram-bg.jpg') no-repeat center center/cover; }
+body.storage { background: url('images/storage-bg.jpg') no-repeat center center/cover; }
+body.psu { background: url('images/psu-bg.jpg') no-repeat center center/cover; }
+body.cooling { background: url('images/cooling-bg.jpg') no-repeat center center/cover; }
+body.case { background: url('images/case-bg.jpg') no-repeat center center/cover; }
+body.monitor { background: url('images/monitor-bg.jpg') no-repeat center center/cover; }
+body.peripherals { background: url('images/peripherals-bg.jpg') no-repeat center center/cover; }
+body.os { background: url('images/os-bg.jpg') no-repeat center center/cover; }
+body.guides { background: url('images/guides-bg.jpg') no-repeat center center/cover; }
+
+/* Фон для главной страницы */
+body.index {
+    background: url('images/main-bg.jpg') no-repeat center center/cover;
+}
+.installation-guide {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.installation-guide h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.installation-guide ol {
+    padding-left: 20px;
+}
+
+.installation-guide li {
+    margin-bottom: 10px;
+}
+.installation-guide img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+.installation-guide {
+    display: flex;
+    align-items: center; /* Выравнивает текст и изображение по центру */
+    gap: 20px; /* Отступ между изображением и текстом */
+}
+
+.installation-guide img {
+    max-width: 40%; /* Размер изображения (можно менять) */
+    height: auto;
+    border-radius: 8px;
+}
+

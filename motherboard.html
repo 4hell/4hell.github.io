@@ -20,6 +20,8 @@
                     <li><a href="storage.html">Накопители</a></li>
                     <li><a href="psu.html">Блоки питания</a></li>
                     <li><a href="case.html">Корпуса</a></li>
+                    <li><a href="ram.html">Оперативная память</a></li>
+                    <li><a href="ram.html">Система охлаждение</a></li>
                     <li><a href="os.html">Операционные системы</a></li>
                 </ul>
             </nav>
@@ -27,6 +29,7 @@
     </header>
     <section class="component-description">
         <div class="container">
+            
             <h2>Что такое материнская плата?</h2>
             <p>
                 Материнская плата — это основа компьютера, которая соединяет все компоненты: процессор, видеокарту, 
@@ -64,8 +67,8 @@
                         <th>Модель</th>
                         <th>Характеристики</th>
                         <th>Цена</th>
-                        <th>Где купить</th>
-                        <th>Добавить в сборку</th>
+                        
+                        
                     </tr>
                 </thead>
                 <tbody>
@@ -73,61 +76,48 @@
                         <td>MSI B450M PRO-VDH MAX</td>
                         <td>Сокет AM4, mATX</td>
                         <td>~5 400₽</td>
-                        <td>
-                            <a href="https://www.dns-shop.ru" target="_blank">DNS</a> | 
-                            <a href="https://www.eldorado.ru" target="_blank">Эльдорадо</a>
-                        </td>
-                        <td>
-                            <button class="add-to-build" data-category="Процессор" data-name="Intel Core i7-12700K" data-price="30000">Добавить в сборку</button>
-                        </td>
+                        
+                        
                     </tr>
                     <tr>
                         <td>ASUS TUF Gaming B550-PLUS</td>
                         <td>Сокет AM4, ATX</td>
                         <td>~11 700₽</td>
-                        <td>
-                            <a href="https://www.dns-shop.ru" target="_blank">DNS</a> | 
-                            <a href="https://www.eldorado.ru" target="_blank">Эльдорадо</a>
-                        </td>
-                        <td>
-                            <button class="add-to-build" data-category="Процессор" data-name="Intel Core i7-12700K" data-price="30000">Добавить в сборку</button>
-                        </td>
+                        
+                        
                     </tr>
                     <tr>
                         <td>ASRock Z690 Taichi</td>
                         <td>Сокет LGA 1700, ATX</td>
                         <td>~27 000₽</td>
-                        <td>
-                            <a href="https://www.dns-shop.ru" target="_blank">DNS</a> | 
-                            <a href="https://www.eldorado.ru" target="_blank">Эльдорадо</a>
-                        </td>
-                        <td>
-                            <button class="add-to-build" data-category="Процессор" data-name="Intel Core i7-12700K" data-price="30000">Добавить в сборку</button>
-                        </td>
+                        
+                        
                     </tr>
                     <tr>
                         <td>Gigabyte AORUS X570 Master</td>
                         <td>Сокет AM4, ATX</td>
                         <td>~36 000₽</td>
-                        <td>
-                            <a href="https://www.dns-shop.ru" target="_blank">DNS</a> | 
-                            <a href="https://www.eldorado.ru" target="_blank">Эльдорадо</a>
-                        </td>
-                        <td>
-                            <button class="add-to-build" data-category="Процессор" data-name="Intel Core i7-12700K" data-price="30000">Добавить в сборку</button>
-                        </td>
+                        
+                        
                     </tr>
                 </tbody>
             </table>
         </div>
     </section>
-    <section class="build-summary">
-        <div class="container">
-            <h2>Ваша сборка</h2>
-            <div id="buildSummary"></div>
-            <div id="totalCost"></div>
-        </div>
+    <section class="installation-guide">
+        <img src="images/motherboard-install.jpg" alt="Установка оперативной памяти" width="500">
+        <h2>Установка материнской платы</h2>
+        <p>Следуйте этим шагам для правильной установки материнской платы:</p>
+        <ol>
+            <li>Выключите компьютер и откройте корпус.</li>
+            <li>Установите стойки для крепления материнской платы (если они не установлены).</li>
+            <li>Разместите плату в корпусе, совместив отверстия для винтов.</li>
+            <li>Закрепите плату винтами.</li>
+            <li>Подключите основное питание (24-pin) и дополнительное питание процессора (8-pin).</li>
+            <li>Подключите кабели передней панели корпуса (USB, аудио, кнопки питания и перезагрузки).</li>
+        </ol>
     </section>
+    
 
     <footer>
         <div class="container">
@@ -135,6 +125,9 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <body class="motherboard">
+        
+        
 </body>
 
 </html>
