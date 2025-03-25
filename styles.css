@@ -205,4 +205,71 @@ body.index {
     height: auto;
     border-radius: 8px;
 }
+/* Общие стили */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Контейнер, чтобы адаптировать ширину */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Гибкие блоки с Flexbox */
+.flex {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет переносить элементы */
+    justify-content: space-between;
+}
+
+/* Адаптация изображений */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Скрытие мобильного меню по умолчанию */
+.mobile-menu {
+    display: none;
+}
+
+/* Медиазапросы для адаптации */
+@media (max-width: 1024px) {
+    .content {
+        font-size: 16px; /* Уменьшаем шрифт для удобства */
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Обычное меню скрываем */
+    }
+    .burger-menu {
+        display: block;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu {
+        display: block;
+        background: #333;
+        color: white;
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        left: 0;
+        text-align: center;
+    }
+    .mobile-menu a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+}
 
