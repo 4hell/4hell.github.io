@@ -220,3 +220,123 @@ body.index {
     .mobile-menu.show { display: block; }
 }
 
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: linear-gradient(to right, #85bac5, #0083b0);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+}
+
+.hero img {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 40%;
+    max-width: 400px;
+    opacity: 0.2;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #fff;
+    color: #007BFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s, opacity 0.5s;
+}
+
+.hero .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.popular-builds {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.popular-builds .build {
+    text-align: center;
+    margin: 20px;
+}
+
+.popular-builds img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.popular-builds h3 {
+    margin-top: 15px;
+    color: #007BFF;
+}
+
+/* Модальное окно */
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+body.index {
+    background: linear-gradient(to right, #92e0f0, #f0f7fa); /* Градиентный фон */
+    background-size: cover;
+    background-position: center;
+}
+.hero .btn {
+    transition: background-color 0.3s, transform 0.3s, opacity 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    opacity: 0.9;
+}
